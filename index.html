@@ -13,10 +13,12 @@
 <body>
 	<header role="banner">
 		<div class="header-content">
-			<a href="#"><img class="site-logo" src="/images/logo/Booki.png"></a>
+			<div class="logo">
+				<a href="#"><img class="site-logo" src="/images/logo/Booki.png"></a>
+			</div>
 			<ul class="main-menu">
-				<li class="menu-item"><a href="#">Accomodations</a></li>
-				<li class="menu-item"><a href="#">Activities</a></li>
+				<li class="menu-item"><a href="#accm">Accomodations</a></li>
+				<li class="menu-item"><a href="#act">Activities</a></li>
 			</ul>
 		</div>
 		
@@ -31,10 +33,11 @@
 		
 		<div class="search-bar">
 			<form action="/search">
-				<i class="fas fa-map-marker-alt" ></i>
+				<i id="pin" class="fas fa-map-marker-alt" ></i>
 				<input type="search" id="search-field" name="q" placeholder="Marseille, France"><br><br>
 				<!-- When the user enters a search term and submits the form, the browser sends the data to the server as a key-value pair: "q" (the name) and the user's input (the value).-->
 				<input type="submit" value="Search">
+				<button id="search-mobile"><i class="fas fa-search" ></i></button>
 			</form>
 		</div>
 
@@ -55,7 +58,7 @@
 
 		<div class="container">
 		
-			<div class="accommodations">
+			<div class="accommodations" id="accm">
 				<h2>Accommodations in Marseille</h2>
 
 				<div class="listing">
@@ -330,7 +333,7 @@
 			</div>
 		</div>
 
-		<div>
+		<div id="act">
 			<div class="activities-title">
 				<h2>Activities in Marseille</h2>
 			</div>
