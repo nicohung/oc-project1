@@ -542,7 +542,7 @@ footer {
 
 /* TABLET --------------------------------------------*/
 
-@media only screen and (max-width : 992px){
+@media (min-width: 769px) and (max-width : 992px){
 	/* styles for screens 768 to 992px; (mobile) */
 
     main, header {
@@ -720,8 +720,12 @@ footer {
         flex: 1 1 100%;
     }
 
+    .image {
+        border-radius: 15px 15px 0 0;
+    }
+
     .card img {
-        transform: translateY(-40%);
+        transform: translateY(-50%);
     }
 
     /* ACTIVITIES ----------------------------*/
@@ -750,7 +754,11 @@ footer {
     }
 
     #card-3-2 img {
-        top: -60%;
+        top: -95%;
+    }
+
+    #card-3-6 img {
+        transform: translateY(-15%);
     }
 
     #card-3-3 .thumbnail {
