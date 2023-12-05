@@ -426,14 +426,17 @@ button {
 .clm {
     display: flex;
     flex-direction: column;
+
+    width: 25%;
 }
 
 .clm-2 {
     display: flex;
     flex-direction: column;
     row-gap: 8%;
-}
 
+    width: 25%;
+}
 
 .card-3 {    
     flex: 1;
@@ -740,6 +743,7 @@ footer {
 
     .clm, .clm-2 {
         row-gap: 0;
+        width: 100%;
     }
 
     .card-3 {
