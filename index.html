@@ -1,7 +1,9 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+	<meta charset="utf-8"> 
+	<!-- The declaration should fit completely within the first 1024 bytes at the start of the file, so it's best to put it immediately after the opening head tag. -->
 	<title>Booki</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,28 +13,26 @@
 </head>
 
 <body>
-	<header role="banner">
-		<div class="header-content">
-			<div class="logo">
-				<a href="#"><img class="site-logo" src="/images/logo/Booki.png"></a>
-			</div>
-			<ul class="main-menu">
-				<li class="menu-item"><a href="#accm">Accomodations</a></li>
-				<li class="menu-item"><a href="#act">Activities</a></li>
-			</ul>
+	<header>
+		<div class="logo">
+			<a href="#"><img class="site-logo" src="/images/logo/Booki.png" alt="Booki Logo"></a>
 		</div>
+		<NAV>
+			<a href="#accm">Accomodations</a>
+			<a href="#act">Activities</a>
+		</NAV>
 		
 	</header>
 
-	<main role="main" class="content">
+	<main class="content">
 
-		<div class="title">
+		<section class="title">
 			<h1>Find a place for your dream vacation</h1>
 			<p>Downtown or in nature</p>
-		</div>
+		</section>
 		
 		<div class="search-bar">
-			<form action="/search">
+			<form>
 				<i id="pin" class="fas fa-map-marker-alt" ></i>
 				<input type="search" id="search-field" name="q" placeholder="Marseille, France"><br><br>
 				<!-- When the user enters a search term and submits the form, the browser sends the data to the server as a key-value pair: "q" (the name) and the user's input (the value).-->
@@ -41,24 +41,24 @@
 			</form>
 		</div>
 
-		<div class="filters">
+		<section class="filters">
 			
-			<p class="label">Filters</p>
+			<h3 class="label">Filters</h3>
 
-			<button><i class="fas fa-money-bill-wave" style="color: #0065fc;"></i>Low cost</button>
-			<button><i class="fas fa-child" style="color: #0065fc;"></i>Family-friendly</button>
-			<button><i class="fas fa-heart" style="color: #0065fc;"></i>Romantic</button>
-			<button><i class="fas fa-dog" style="color: #0065fc;"></i>Pets allowed</button>
-		</div>
+			<button><i class="fas fa-money-bill-wave"></i>Low cost</button>
+			<button><i class="fas fa-child"></i>Family-friendly</button>
+			<button><i class="fas fa-heart"></i>Romantic</button>
+			<button><i class="fas fa-dog"></i>Pets allowed</button>
+		</section>
 
 		<div class="information">
-			<i class="fas fa-info" style="color: #0065fc;"></i>
+			<i class="fas fa-info"></i>
 			<p>More than 500 accommodations are available in this city</p>
 		</div>
 
 		<div class="container">
 		
-			<div class="accommodations" id="accm">
+			<section class="accommodations" id="accm">
 				<h2>Accommodations in Marseille</h2>
 
 				<div class="listing">
@@ -66,7 +66,7 @@
 						<a href="#">
 							
 							<div class="image">
-								<img class="thumbnail" src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+								<img class="thumbnail" src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
 							</div>
 						
 							<div class="details">
@@ -77,10 +77,10 @@
 								</div>
 			
 								<div class="stars">
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
 									<i class="fas fa-star" style="color: #d6d6d6;"></i>
 								</div>
 							</div>
@@ -92,7 +92,7 @@
 						<a href="#">
 							
 							<div class="image">
-								<img class="thumbnail" src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+								<img class="thumbnail" src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
 							</div>
 						
 							<div class="details">
@@ -103,10 +103,10 @@
 								</div>
 			
 								<div class="stars">
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
 									<i class="fas fa-star" style="color: #d6d6d6;"></i>
 								</div>
 							</div>
@@ -118,7 +118,7 @@
 						<a href="#">
 							
 							<div class="image">
-								<img class="thumbnail" src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+								<img class="thumbnail" src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel">
 							</div>
 						
 							<div class="details">
@@ -129,10 +129,10 @@
 								</div>
 			
 								<div class="stars">
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
 									<i class="fas fa-star" style="color: #d6d6d6;"></i>
 								</div>
 							</div>
@@ -144,8 +144,7 @@
 						<a href="#">
 							
 							<div class="image">
-								<img class="thumbnail" src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" 
-								srcset="/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 768w">
+								<img class="thumbnail" src="/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
 							</div>
 						
 							<div class="details">
@@ -156,10 +155,10 @@
 								</div>
 			
 								<div class="stars">
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
 									<i class="fas fa-star" style="color: #d6d6d6;"></i>
 								</div>
 							</div>
@@ -171,8 +170,7 @@
 						<a href="#">
 							
 							<div class="image">
-								<img class="thumbnail" src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt=""
-								srcset="/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 768w">
+								<img class="thumbnail" src="/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
 							</div>
 						
 							<div class="details">
@@ -183,10 +181,10 @@
 								</div>
 			
 								<div class="stars">
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
 									<i class="fas fa-star" style="color: #d6d6d6;"></i>
 								</div>
 							</div>
@@ -198,8 +196,7 @@
 						<a href="#">
 							
 							<div class="image">
-								<img class="thumbnail" src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt=""
-								srcset="/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 768w">
+								<img class="thumbnail" src="/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
 							</div>
 						
 							<div class="details">
@@ -210,10 +207,10 @@
 								</div>
 			
 								<div class="stars">
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
-									<i class="fas fa-star" style="color: #0065fc;"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
 									<i class="fas fa-star" style="color: #d6d6d6;"></i>
 								</div>
 							</div>
@@ -225,9 +222,9 @@
 				
 
 				<a class="label" href="#">Show More</a>
-			</div>
+			</section>
 
-			<div class="most-popular">
+			<section class="most-popular">
 				<div class="most-popular-title">
 					<h2>Most Popular</h2>
 					<i class="fas fa-star"></i>
@@ -240,7 +237,7 @@
 							
 							<div class="card-2-content">
 								<div class="image-2">
-									<img class="thumbnail" src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+									<img class="thumbnail" src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel">
 								</div>
 
 								<div class="details-2">
@@ -254,10 +251,10 @@
 				
 									<div class="stars-2">
 										<div class="stars-container">
-											<i class="fas fa-star" style="color: #0065fc;"></i>
-											<i class="fas fa-star" style="color: #0065fc;"></i>
-											<i class="fas fa-star" style="color: #0065fc;"></i>
-											<i class="fas fa-star" style="color: #0065fc;"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
 											<i class="fas fa-star" style="color: #d6d6d6;"></i>
 										</div>
 									</div>
@@ -272,7 +269,7 @@
 							
 							<div class="card-2-content">
 								<div class="image-2">
-									<img class="thumbnail" src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+									<img class="thumbnail" src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Bed and Breakfast">
 								</div>
 
 								<div class="details-2">
@@ -286,10 +283,10 @@
 				
 									<div class="stars-2">
 										<div class="stars-container">
-											<i class="fas fa-star" style="color: #0065fc;"></i>
-											<i class="fas fa-star" style="color: #0065fc;"></i>
-											<i class="fas fa-star" style="color: #0065fc;"></i>
-											<i class="fas fa-star" style="color: #0065fc;"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
 											<i class="fas fa-star" style="color: #d6d6d6;"></i>
 										</div>
 									</div>
@@ -304,7 +301,7 @@
 							
 							<div class="card-2-content">
 								<div class="image-2">
-									<img id="tout" class="thumbnail" src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+									<img id="tout" class="thumbnail" src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout bleu et Blanc Hotel">
 								</div>
 
 								<div class="details-2">
@@ -318,10 +315,10 @@
 				
 									<div class="stars-2">
 										<div class="stars-container">
-											<i class="fas fa-star" style="color: #0065fc;"></i>
-											<i class="fas fa-star" style="color: #0065fc;"></i>
-											<i class="fas fa-star" style="color: #0065fc;"></i>
-											<i class="fas fa-star" style="color: #0065fc;"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
 											<i class="fas fa-star" style="color: #d6d6d6;"></i>
 										</div>
 									</div>
@@ -333,10 +330,10 @@
 					
 				</div>
 				
-			</div>
+			</section>
 		</div>
 
-		<div id="act">
+		<section id="act">
 			<div class="activities-title">
 				<h2>Activities in Marseille</h2>
 			</div>
@@ -347,7 +344,7 @@
 					<div class="card-3">
 						<a href="#">
 							<div class="image-3">
-								<img class="thumbnail" src="/images/activities/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+								<img class="thumbnail" src="/images/activities/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port">
 							</div>
 							<div class="title">
 								<h3>Old Port</h3>
@@ -360,8 +357,7 @@
 					<div class="card-3" id="card-3-2">
 						<a href="#">
 							<div class="image-3">
-								<img class="thumbnail" src="/images/activities/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt=""
-								srcset="/images/activities/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 768w">
+								<img class="thumbnail" src="/images/activities/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomègues Fort">
 							</div>
 							<div class="title">
 								<h3>Pomègues Fort</h3>
@@ -372,7 +368,7 @@
 					<div class="card-3" id="card-3-3">
 						<a href="#">
 							<div class="image-3">
-								<img class="thumbnail" src="/images/activities/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+								<img class="thumbnail" src="/images/activities/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island">
 							</div>
 							<div class="title">
 								<h3>Frioul Island</h3>
@@ -385,8 +381,7 @@
 					<div class="card-3">
 						<a href="#">
 							<div class="image-3">
-								<img class="thumbnail" src="/images/activities/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt=""
-								srcset="/images/activities/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 768w">
+								<img class="thumbnail" src="/images/activities/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park">
 							</div>
 							<div class="title">
 								<h3>Calanques National Park</h3>
@@ -399,8 +394,7 @@
 					<div class="card-3" id="card-3-5">
 						<a href="#">
 							<div class="image-3">
-								<img class="thumbnail" src="/images/activities/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt=""
-								srcset="/images/activities/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 768w">
+								<img class="thumbnail" src="/images/activities/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde">
 							</div>
 							<div class="title">
 								<h3>Notre-Dame-de-la-Garde</h3>
@@ -411,8 +405,7 @@
 					<div class="card-3" id="card-3-6">
 						<a href="#">
 							<div class="image-3">
-								<img class="thumbnail" src="/images/activities/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt=""
-								srcset="/images/activities/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 768w">
+								<img class="thumbnail" src="/images/activities/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park">
 							</div>
 							<div class="title">
 								<h3>Longchamp Park</h3>
@@ -424,7 +417,7 @@
 
 			</div>
 			
-		</div>
+		</section>
 
 	</main>
 	
