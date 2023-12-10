@@ -227,36 +227,36 @@ button {
 .container {
 	display: flex;
 	justify-content: space-between;
-	gap: 4%;
+	gap: 3%;
 }
 
 .accommodations {
 	width: 66%; 
 
-	border-radius: 15px;
+	border-radius: 20px;
 
-	outline: solid;
+	/* outline: solid;
 	outline-width: 10px;
-	outline-color: #F2F2F2;
+	outline-color: #F2F2F2; */
  
 	background-color: #F2F2F2;
 
-	padding: 20px 35px 35px 35px;
+	padding: 25px 40px 30px 40px;
 
 	margin-top: 30px;
 }
 
 .most-popular {
 	width: 33%; 
-	border-radius: 15px;
+	border-radius: 20px;
 
-	outline: solid;
+	/* outline: solid;
 	outline-width: 10px;
-	outline-color: #F2F2F2;
+	outline-color: #F2F2F2; */
  
 	background-color: #F2F2F2;
 
-	padding: 20px 35px 35px 35px;
+	padding: 25px 40px 10px 40px;
 
 	margin-top: 30px;
 }
