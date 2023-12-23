@@ -30,7 +30,7 @@ i {
 	color: #0065fc;
 }
 
-#empty {
+.empty {
 	color: #d6d6d6;
 }
 
@@ -49,7 +49,6 @@ header {
 
 .logo {
 	padding-top: 20px;
-	
 }
 
 NAV {
@@ -661,11 +660,26 @@ footer {
 		padding-bottom: 20px;
 
 		margin-right: 0px;
+
+		box-shadow: inset 0px -4px 0px 0px #F2F2F2;
 	}
 
-	NAV a:hover {
-		box-shadow: inset 0px -4px 0px 0px #0065fc;
+	NAV .link2:hover {
+		box-shadow: inset 0px -4px 0px 0px #F2F2F2;
+		color: black;
 	}
+
+	NAV .link1 {
+		box-shadow: inset 0px -4px 0px 0px #0065fc;
+		color: #0065fc;
+	}
+
+	NAV .link1:hover {
+		box-shadow: inset 0px -4px 0px 0px #0065fc;
+		color: #0065fc;
+	}
+
+
 
 	/* SEARCH --------------------------------*/
 	.search-bar {
@@ -709,6 +723,22 @@ footer {
 
 	.filters button {
 		margin-left: 0;
+	}
+
+	#money-bt {
+		order: 1;
+	}
+
+	#heart-bt {
+		order: 2;
+	}
+
+	#child-bt {
+		order: 3;
+	}
+
+	#dog-bt {
+		order: 4;
 	}
 
 	/* MOST POPULAR ----------------------------*/
